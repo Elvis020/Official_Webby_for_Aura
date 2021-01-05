@@ -1,0 +1,115 @@
+
+
+
+
+.intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background: #000000;
+    /* height: 15rem; */
+    /* position: absolute; */
+    /* animation: intro 10s ease-out forwards; */
+    /* width: 40%; */
+}
+
+.text1{
+    font-size: 30px;
+    font-weight: 700;    
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    height: 70px;
+    animation: text 3s ease-in forwards;
+    font-family: 'Great Vibes';
+    width: 50rem;
+}
+.text2{
+    animation: text2 3s ease-in forwards;
+    font-size: 80px;
+    color: #6ab04c;
+}
+
+@keyframes text2{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+        margin-top: -30px;
+    }
+    75%{
+        opacity: 0;
+        margin-top: -30px;
+    }
+    95%{
+        opacity: .2;
+        margin-top: -30px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: -30px;
+    }
+    
+}
+@keyframes intro{
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: .9;
+    }
+    50%{
+        opacity: .7;
+    }
+    70%{
+        opacity: .5;
+    }
+    90%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 0; 
+    }
+    
+}
+@keyframes text{
+    0%{
+        color: #000;
+        margin-bottom: -30px;
+        
+    }
+    25%{
+        letter-spacing: 25px;
+        margin-bottom: -30px;
+    }
+    75%{
+        letter-spacing: 8px; 
+        margin-bottom: -30px;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media (max-width: 895px){
+    .text2 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 745px){
+    .text2 {
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+}
+@media (max-width: 594px){
+    .text2 {
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+}
